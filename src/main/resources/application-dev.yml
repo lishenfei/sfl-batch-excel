@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.75.130:3306/excel_test?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    username: root
+    password: lishenfei
+  jpa:
+    hibernate:
+      ddl-auto: update
+  batch:
+    tmpDirPath: D:/data/excel/
+
+management:
+  port: 18007
