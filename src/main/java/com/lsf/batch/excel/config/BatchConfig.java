@@ -91,7 +91,7 @@ public class BatchConfig {
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
         jpaVendorAdapter.setDatabase(Database.MYSQL);
         jpaVendorAdapter.setGenerateDdl(true);
-        jpaVendorAdapter.setShowSql(true);
+        jpaVendorAdapter.setShowSql(false);
         jpaVendorAdapter.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
         return jpaVendorAdapter;
     }
